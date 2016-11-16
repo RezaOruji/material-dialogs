@@ -15,11 +15,11 @@ public enum GravityEnum {
     public int getGravityInt() {
         switch (this) {
             case START:
-                return HAS_RTL ? Gravity.START : Gravity.LEFT;
+                return  Gravity.LEFT;
             case CENTER:
                 return Gravity.CENTER_HORIZONTAL;
             case END:
-                return HAS_RTL ? Gravity.END : Gravity.RIGHT;
+                 Gravity.RIGHT;
             default:
                 throw new IllegalStateException("Invalid gravity constant");
         }
